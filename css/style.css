@@ -1,6 +1,36 @@
-* {
-    box-sizing: border-box;
+@font-face {
+    font-family: "Cuprum";
+    src: url(../font/Cuprum/Cuprum-Regular.eot),
+    url(../font/Cuprum/Cuprum-Regular.woff) format("woff"),
+    url(../font/Cuprum/Cuprum-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
+@font-face {
+    font-family: "Cuprum";
+    src: url(../font/Cuprum/CuprumBold.eot),
+    url(../font/Cuprum/CuprumBold.woff) format("woff"),
+    url(../font/Cuprum/CuprumBold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url(../font/Cuprum/CuprumBoldItalic.eot),
+    url(../font/Cuprum/CuprumBoldItalic.woff) format("woff"),
+    url(../font/Cuprum/CuprumBoldItalic.ttf) format("truetype");
+    font-style: Italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url(../font/Cuprum/CuprumItalic.eot),
+    url(../font/Cuprum/CuprumItalic.woff) format("woff"),
+    url(../font/Cuprum/CuprumItalic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
 body {
     font-family: 'Cuprum', "Roboto", "San Francisco", Arial, Helvetica, sans-serif;
     width: 100%;
@@ -160,16 +190,18 @@ li {
     margin-top: 33px;
 }
 .middle-header-p p {
+    font-style: italic;
     color: #ee3643;
     width: 200px;
     margin-left: 52px;
+    line-height: 1.438;
+    font-size: 16px;
 }
 .wrap {
     padding-top: 11px;
 }
 .wrap a {
     font-size: 21px;
-    font-family: "Cuprum";
     line-height: 0.857;
     color: #ee3643;
     border: 3px solid #ffffff;
@@ -184,7 +216,9 @@ address {
     margin: 10px 0 0 10px;
 }
 .check-in {
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    font-size: 21px;
+    line-height: 0.857;
 }
 .door::before {
     position: relative;
@@ -192,20 +226,14 @@ address {
     right: 14px;
 }
 .door {
-    font-size: 21px;
-    font-family: "Cuprum";
-    color: rgb(0, 0, 0);
-    line-height: 0.857;
+    color: rgb(0, 0, 0); 
     background: #ffffff;
     padding: 11px 27px 11px 28px;
+    margin-right: 10px;
 }
 .register {
-    font-size: 21px;
-    font-family: "Cuprum";
-    color: rgb(0, 0, 0);
-    line-height: 0.857;
+    color: rgb(0, 0, 0); 
     background: #ffffff;
-    margin-left: 10px;
     padding: 11px 25px 11px;
 }
 .bottom-header {
@@ -224,34 +252,57 @@ address {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: px;
+    padding-top: 59px;
 }
 .catalog {
-    padding: 20px 75px;
     background: #ffbf47;
-    flex-basis: 300px;
     width: 300px;
     height: 123px;
-    margin-bottom: 20px;
 }
-.section {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.info {
+    position: relative;
+    left: 23px;
+    top: 26px;
+}
+.info h3 {
+    color: #ffff;
+}
+.info a {
+    text-transform: uppercase;
+    line-height: 1.286;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 14px 24px;
+    border-radius: 3px;
+}
+.slides-container {
+   
+}
+.slides-container input {
+    display: none;
+}
+.slider-controls {
+    position: absolute;
+
 }
 .sliders {
     width: 620px;
     height: 266px;
-    background: url(../images/Layer98.png) no-repeat;
-    ;
+    background-color: #8c7961;
+}
+.sliders::after {
+    position: relative;
+    background: rgba(0, 0, 0, 0.9)
+    height: 40px;
+    width: 621px;
 }
 .slider-1 {
-    
-    
+    background-image: url(../images/Layer98.png) no-repeat;
 }
 .features {
 }
 .caption-slider {
-    position: absolute;
-    left: 550px;
+    color: #ffffff;
+    position: relative;
+    top:27px;
+    left: 26px;
 }
