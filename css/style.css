@@ -348,5 +348,101 @@ address {
 .slides .button:active {
     background: #ba2732
 }
+.popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+    background: #f9f5f0;
+    padding: 0 30px;
+}
+.popular h2 {
+    font-size: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+.popular a {
+    padding: 14px 55px;
+    border-radius: 3px;
+}
+.manufacturers a {
+    padding: 14px 70px;
+}
+.goods {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 21px;;
+}
+.card {
+font-family: "PTSans";
+font-size: 18px;
+width: 220px;
+height: 318px;
+text-align: center;
+}
+.card span {
+    text-transform: uppercase;
+}
+.card .del{
+    position: relative;
+    bottom: 10px;
+    left: 25%;
+}
+.card h4 {
+    position: relative;
+}
+.card .button {
+    position: relative;
+    padding: 13px 21px 13px 37px;
+    top: 31px;
+    right: 21%;
+}
+.card-4 .button {
+    left: 0;
+}
+.buttons {
+    padding-top: 35px;
+}
+.buttons:hover ~ .buttons a {
+       
+}
+.buttons a {
+    font-family: 'Cuprum';
+    display:block;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 14px 0 11px;
+    margin: 10px 43px;
+ }
+.buttons .buy {
+    margin-top: 10px;
+    color: #ffffff;
+    background: #63a63e;
+    box-shadow: 0 3px 0 0 #367315;
+    outline: 0;
+}
+.buttons .to-bookmarks {
+    color: rgb(0, 0, 0);
+    border: 3px solid #63a63e;
+    outline: 0;
+    padding: 11px 0 8px;
+}
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+  justify-content: space-around;
+}
+.partners a {
+    width: 220px;
+    height: 145px;
+    border: 1px dotted #ebebeb;
+    margin: 20px;
+}
+.partners a:nth-child(1){
+    position: relative;
+    top: 55px;
+}
 
 
