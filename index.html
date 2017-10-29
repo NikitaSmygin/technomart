@@ -16,32 +16,32 @@
     <header>
         <div class="main-header">
             <div class="container">
-                <div class="top-header">
-                    <div class="top-header-left">
-                        <a class="logo" href="index.html">
-                            <h1>Техномарт</h1>
-                        </a>
-                        <form action="url">
-                            <button class="search-btn" type="submit">Поиск:</button>
-                            <input class="search" id="search" type="search">
-                        </form>
-                    </div>
-                    <div class="top-header-right">
-                        <ul>
-                            <li>
-                                <a class="bookmark" href="">Закладки: 0</a>
-                            </li>
-                            <li>
-                                <a class="basket" href="">Корзина: 0</a>
-                            </li>
-                            <li>
-                                <a class="order" href="">Оформить заказ</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="top-menu">
+                    <ul>
+                        <li class="logo">
+                            <a class="logo" href="index.html">
+                                <h1>Техномарт</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <form action="url">
+                                <button class="search-btn" type="submit">Поиск:</button>
+                                <input class="search" id="search" type="search">
+                            </form>
+                        </li>
+                        <li>
+                            <a class="bookmark" href="">Закладки: 0</a>
+                        </li>
+                        <li>
+                            <a class="basket" href="">Корзина: 0</a>
+                        </li>
+                        <li>
+                            <a class="order" href="">Оформить заказ</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="middle-header">
-                    <div class="middle-header-p">
+                <div class="user-block">
+                    <div class="description">
                         <p>Интернет-магазин строительных материалов
                             <br> и инструментов для ремонта</p>
                     </div>
@@ -56,16 +56,16 @@
                         <a class="register" href="">Регистрация</a>
                     </div>
                 </div>
-                <nav class="bottom-header">
+                <nav class="navigation">
                     <ul>
                         <li>
-                            <a href="">Главная</a>
+                            <a href="index.html">Главная</a>
                         </li>
                         <li>
                             <a href="">Компания</a>
                         </li>
                         <li>
-                            <a href="">Каталог</a>
+                            <a href="catalog.html">Каталог</a>
                         </li>
                         <li>
                             <a href="">Новости</a>
@@ -135,55 +135,83 @@
                     </div>
                 </div>
             </div>
-            <div class="popular">
+            <div class="popular goods">
                 <h2>Популярные товары:</h2>
                 <a class="button" href="">Все популярные товары</a>
             </div>
-            <div class="goods cards">
+            <div class="cards">
                 <div class="card card-1">
+                    <figure class="puncher">
+                        <img src="images/snippet1.jpg" width="184" height="164" alt="">
+                    </figure>
                     <div class="buttons">
                         <a href="" class="buy">Купить</a>
                         <a href="" class="to-bookmarks">В закладки</a>
                     </div>
-                    <h4>Перфоратор
-                        <span>Bosch bfg</span>9000</h4>
-                    <span class="del">
-                        <del>32500 р.</del>
-                    </span>
-                    <a class="button" href="">25500 р.</a>
+                    <div class="desc">
+                        <h4>Перфоратор
+                            <span>Bosch bfg</span>9000</h4>
+                        <span class="del">
+                            <del>32500 р.</del>
+                        </span>
+                        <div class="buy-btn">
+                            <button type="submit">25500 р.</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card-2">
+                    <figure class="puncher">
+                        <img src="images/snippet2.jpg" width="127" height="112" alt="">
+                    </figure>
                     <div class="buttons">
                         <a href="" class="buy">Купить</a>
                         <a href="" class="to-bookmarks">В закладки</a>
                     </div>
-                    <h4>Перфоратор
-                        <span>Bosch bfg</span>3000</h4>
-                    <span class="del">
-                        <del>22500 р.</del>
-                    </span>
-                    <a class="button" href="">15500 р.</a>
+                    <div class="desc">
+                        <h4>Перфоратор
+                            <span>Bosch bfg</span>3000</h4>
+                        <span class="del">
+                            <del>22500 р.</del>
+                        </span>
+                        <div class="buy-btn">
+                            <button type="submit">15500 р.</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card-3">
+                    <figure class="puncher">
+                        <img src="images/snippet3.jpg" width="144" height="128" alt="">
+                    </figure>
                     <div class="buttons">
                         <a href="" class="buy">Купить</a>
                         <a href="" class="to-bookmarks">В закладки</a>
                     </div>
-                    <h4>Перфоратор
-                        <span>Bosch bfg</span>6000</h4>
-                    <span class="del">
-                        <del>30500 р.</del>
-                    </span>
-                    <a class="button" href="">25500 р.</a>
+                    <div class="desc">
+                        <h4>Перфоратор
+                            <span>Bosch bfg</span>6000</h4>
+                        <span class="del">
+                            <del>30500 р.</del>
+                        </span>
+                        <div class="buy-btn">
+                            <button type="submit">25500 р.</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card-4">
+                    <figure class="puncher">
+                        <img src="images/snippet4.jpg" width="127" height="112" alt="">
+                    </figure>
                     <div class="buttons">
                         <a href="" class="buy">Купить</a>
                         <a href="" class="to-bookmarks">В закладки</a>
                     </div>
-                    <h4>Перфоратор
-                        <span>Bosch bfg</span>2000</h4>
-                    <a class="button" href="">12500 р.</a>
+                    <div class="desc">
+                        <h4>Перфоратор
+                            <span>Bosch bfg</span>2000</h4>
+                        <div class="buy-btn">
+                            <button type="submit">12500 р.</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="popular manufacturers">
@@ -194,27 +222,35 @@
             <div class="partners">
                 <a href="">
                     <img src="images/bosch.png" alt="Bosch">
+                    <div class="overlay"></div>
                 </a>
                 <a href="">
                     <img src="images/Makita.png" alt="Makita">
+                    <div class="overlay"></div>
                 </a>
                 <a href="">
                     <img src="images/DeWALT.png" alt="Dewalt">
+                    <div class="overlay"></div>
                 </a>
                 <a href="">
                     <img src="images/Interscol.png" alt="Interscol">
+                    <div class="overlay"></div>
                 </a>
                 <a href="">
                     <img src="images/Hitachi.png" alt="Hitachi">
+                    <div class="overlay"></div>
                 </a>
                 <a href="">
                     <img src="images/LG.png" alt="Lg">
+                    <div class="overlay"></div>
                 </a>
                 <a href="">
                     <img src="images/AEG.png" alt="Aeg power solutions">
+                    <div class="overlay"></div>
                 </a>
                 <a href="">
                     <img src="images/Metabo.png" alt="Metabo workc.don't play.">
+                    <div class="overlay"></div>
                 </a>
             </div>
             <div class="services">

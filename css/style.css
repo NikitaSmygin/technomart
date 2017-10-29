@@ -24,24 +24,21 @@ header {
     height: 320px;
 }
 .main-header {
-    height: 42px ;
+   height: 42px ;
     background-color: #293449;
 }
 .container {
     width: 940px;
     margin: 0 auto;
 }
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 42px;
-}
-.top-header-left {
+.top-menu ul {
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.top-header-left form {
+.top-menu form {
     width: 270px;
     vertical-align: middle;
     white-space: nowrap;
@@ -56,7 +53,7 @@ header {
     left: 0px;
     width: 270px;
 }
-.top-header-left form:hover {
+.top-menu form:hover {
     background: #212a3a url(../images/icon-search2.svg) 17px no-repeat;
 }
 .search:focus {
@@ -81,9 +78,6 @@ li {
     display: inline-block;
 }
 .logo{
-   font-size: 24px;
-   font-weight: 500;
-   color: #ffffff;
    background: #ee3643;
    text-align: center;
    text-transform: uppercase;
@@ -108,7 +102,7 @@ li {
 }
 .basket , 
 .bookmark {
-    padding:12px 12px 10px 25px;
+    padding:12px 25px 10px 25px;
 }
 .bookmark::before {
     position: relative;
@@ -132,7 +126,7 @@ li {
 }
 .order {
    background: #63a63e;
-   padding: 12px;
+   padding: 12px 25px;
 }
 .order:active {
     background: #518534;
@@ -140,13 +134,13 @@ li {
 .order:hover {
     background: #5fbb2d;
 }
-.middle-header {
+.user-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 33px;
 }
-.middle-header-p p {
+.description p {
     font-style: italic;
     color: #ee3643;
     width: 200px;
@@ -174,7 +168,7 @@ address {
     margin: 10px 0 0 10px;
 }
 .check-in {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 21px;
     line-height: 0.857;
 }
@@ -182,12 +176,13 @@ address {
     position: relative;
     content: url(../images/icon-login.png);
     right: 14px;
+    top: 1px;
 }
 .door {
     color: rgb(0, 0, 0); 
     background: #ffffff;
-    padding: 11px 27px 11px 28px;
-    margin-right: 10px;
+    padding: 10px 25px 10px 27px;
+    margin-right: 5px;
 }
 .door:hover {
     background: #ffffff url(../images/icon-login2.png) 14px 12px no-repeat;
@@ -196,27 +191,27 @@ address {
 .register {
     color: rgb(0, 0, 0); 
     background: #ffffff;
-    padding: 11px 25px 11px;
+    padding: 10px 25px 10px;
 }
 .register:hover {
     color: #ee3643; 
 }
-.bottom-header {
+.navigation {
     background-color: #32425c;
     height: 55px;
     box-shadow: 0 5px 0 0 #293449;
     margin-top: 24px;
 }
-.bottom-header li {
+.navigation li {
     padding: 20px 0;
 }
-.bottom-header a {
+.navigation a {
     padding: 20px 28px;
 }
-.bottom-header a:hover {
+.navigation a:hover {
     background: #293449;
 }
-.bottom-header a:active {
+.navigation a:active {
     background: #1d2739;
     color: #a1a4a8;
 }
@@ -248,7 +243,9 @@ address {
     background: #ffbf47 url(../images/delivery.png) 191px 32px no-repeat;
 }
 .info {
-    padding: 4px 0 0 23px;
+    padding: 1px 0 1px 21px;
+    position: relative;
+    bottom: 4px;
 }
 .info h3 {
     font-size: 24px;
@@ -257,7 +254,7 @@ address {
 .info a {
     text-transform: uppercase;
     background: rgba(0, 0, 0, 0.1); 
-    padding: 9px 19px;
+    padding: 9px 20px;
     border-radius: 3px;
 }
 .info a:hover {
@@ -348,6 +345,9 @@ address {
 .slides .button:active {
     background: #ba2732
 }
+.goods {
+    margin-top: 53px;
+}
 .popular {
     display: flex;
     justify-content: space-between;
@@ -368,7 +368,7 @@ address {
 .manufacturers a {
     padding: 14px 70px;
 }
-.goods {
+.cards {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 21px;;
@@ -378,41 +378,79 @@ font-family: "PTSans";
 font-size: 18px;
 width: 220px;
 height: 318px;
-text-align: center;
+border: 1px dotted #eaeaea; 
 }
-.card span {
+.card .puncher {
+    width: 201px;
+    height: 168px;
+    margin: 5px 0 0 17px;
+}
+.puncher img {
+    transform: translate(10px, 24px)
+}
+.card-1 .puncher img {
+    transform: translate(0, 0)
+}
+.desc { 
+    position: relative;
+    bottom: 5px;
+    text-align: center;
+}
+.desc span {
     text-transform: uppercase;
 }
-.card .del{
-    position: relative;
-    bottom: 10px;
-    left: 25%;
+.desc h4 {
+    margin: 0;
+    padding-bottom:18px;
 }
-.card h4 {
-    position: relative;
+.card-4 h4 {
+    padding-bottom: 39px;
 }
-.card .button {
-    position: relative;
-    padding: 13px 21px 13px 37px;
-    top: 31px;
-    right: 21%;
+.desc .del{
+    color: #CCCCCC;
+    font-size: 19px;
 }
-.card-4 .button {
-    left: 0;
+.buy-btn {
+   position: relative;
+   transform: translate(-5px, 13px)
 }
+.buy-btn button{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 125px;
+    height: 38px;
+    padding: 10px 0;
+    background: #ee3643;
+    border: 0;
+    color: #ffffff;
+    border-radius: 3px 2px 2px 3px;
+    outline: 0;
+}
+.buy-btn button::after {
+    content: "";
+    position: absolute;
+    border-left: 27.5px solid transparent;
+    border-right: 27.5px solid #ee3643;
+    border-bottom: 27.5px solid transparent;
+    bottom: 14.5px;
+    right: 13.4%;
+    transform: rotate(45deg);
+    border-radius: 3px 0 3px;
+}
+
 .buttons {
-    padding-top: 35px;
-}
-.buttons:hover ~ .buttons a {
-       
+    display:none;
+    transform: translate(0, 34px)
 }
 .buttons a {
     font-family: 'Cuprum';
     display:block;
     text-transform: uppercase;
     border-radius: 3px;
-    padding: 14px 0 11px;
-    margin: 10px 43px;
+    padding: 10px 15px;
+    margin: 10px 42px;
+    text-align: center;
  }
 .buttons .buy {
     margin-top: 10px;
@@ -421,28 +459,87 @@ text-align: center;
     box-shadow: 0 3px 0 0 #367315;
     outline: 0;
 }
+.buttons .buy::before {
+    position: relative;
+    content: url(../images/cart-icon.png);
+    right: 20px;
+    top: 2px
+}
+.buttons .buy:hover {
+    background: #5fbb2d url(../images/basket-icon2.png) 14px 11px no-repeat;
+}
+.buttons .buy:active {
+    background: #518534 url(../images/basket-icon2.png) 14px 11px no-repeat;
+}
 .buttons .to-bookmarks {
-    color: rgb(0, 0, 0);
+    color: #32425c;
     border: 3px solid #63a63e;
     outline: 0;
     padding: 11px 0 8px;
 }
+.buttons .to-bookmarks:hover {
+    border-color: #32425c;
+}
+.buttons .to-bookmarks:active {
+    border-color: #c1c6ce;
+    color: #c1c6ce;
+}
+.card:hover .desc {
+    top:53px;
+}
+.card:hover  .puncher {
+    display: none;
+}
+.card:hover  .buttons {
+    display: block;
+}
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.25);
+}
 .partners {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    
-  justify-content: space-around;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 310px;
+    margin-top: 20px;
 }
 .partners a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 220px;
     height: 145px;
-    border: 1px dotted #ebebeb;
-    margin: 20px;
+    border: 1px dotted #eaeaea;
+    
 }
-.partners a:nth-child(1){
-    position: relative;
-    top: 55px;
+.partners a img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners a:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.partners a:active {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.overlay {
+   position:absolute;
+   width: 100%;
+   height: 100%;
+}
+.partners a:active .overlay{
+    background: rgba(255, 255, 255, 0.65);
+}
+.services {
+    margin-top:85px;
+    height: 522px;
+    background: #f4f8fa;
+}
+.services h5 {
+ font-size: 27px;
 }
 
 
