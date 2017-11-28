@@ -1342,3 +1342,75 @@ a.active {
 .catalog-foot {
     margin-top: 0;
 }
+.circle:hover{
+    background-color: #ee3643;
+  }
+  .circle:active{
+    background-color: #ee3643;
+  }
+  .creator a:hover{
+    text-decoration: underline;
+  }
+  .creator a:active{
+    color: #ee3643;
+  }
+  .foot-menu li a:hover{
+    text-decoration: underline;
+  }
+  .foot-menu li a:active{
+    text-decoration: none;
+    opacity: 0.6;
+  }
+  .data a:hover {
+    text-decoration: underline;
+  }
+  .data a:active {
+    color: #ee3643;
+    text-decoration: none;
+  }
+  .pagination a:hover{
+    border: 1px solid #bdc6ca;
+  }
+  .pagination a:active{
+    border: 1px solid #ee3643;
+  }
+.ctg-user {
+    background-color: #ffffff;
+    width: 300px;
+    height: 46px;
+}
+.ctg-user p {
+    font-size: 21px;
+    line-height: calc(18/21);
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    margin: 13px 0px 20px 47px;
+    background-image: url(../images/icon-login2.png);
+    background-position: 222px 1px;
+    background-repeat: no-repeat;
+}
+.ctg-user a {
+    font-size: 16px;
+    line-height: calc(18/16);
+    text-decoration: underline;
+    color: #32425c;
+    margin-left: 19px;
+    float: left;
+}
+.privat:last-child {
+    margin-left: 32px;
+}
+.dot {
+    position: relative;
+}
+.dot:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 2px;
+    top: 6px;
+    left: 108px;
+    border: 2px solid #32425c;
+    background-color: #32425c;
+    border-radius: 50%;
+}
